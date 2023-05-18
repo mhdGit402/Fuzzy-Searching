@@ -17,13 +17,16 @@
                     <ul id="categoryTitle"
                         class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a style="font-weight:600;padding-left:42px !important;" href="/user/create"
-                                class="link-body-emphasis d-inline-flex text-decoration-none">Create user</a>
+                                class="link-body-emphasis d-inline-flex text-decoration-none">Create User</a>
                         </li>
                         <li><a style="font-weight:600;padding-left:42px !important;" href="/users"
-                                class="link-body-emphasis d-inline-flex text-decoration-none">View users</a>
+                                class="link-body-emphasis d-inline-flex text-decoration-none">View Users</a>
                         </li>
                         <li><a style="font-weight:600;padding-left:42px !important;" href="/users/duplicate"
                                 class="link-body-emphasis d-inline-flex text-decoration-none">Detect Duplicates</a>
+                        </li>
+                        <li><a style="font-weight:600;padding-left:42px !important;" href="/users/merged"
+                                class="link-body-emphasis d-inline-flex text-decoration-none">Merged Users</a>
                         </li>
                     </ul>
                 </div>

@@ -152,4 +152,9 @@ class UserController extends Controller
             return false;
     }
 
+    public function mergedUsers(MergedUsers $mergedusers){
+        $mergedusers =  MergedUsers::with('user')->get();
+        return view('mergedUsers', ['data' => $mergedusers]);
+    }
+
 }

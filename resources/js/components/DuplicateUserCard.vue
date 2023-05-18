@@ -4,8 +4,8 @@
             <thead class="thead-light">
                 <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">First name</th>
-                    <th scope="col">Last name</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -34,8 +34,8 @@
             <thead class="thead-light">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">First name</th>
-                    <th scope="col">Last name</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -62,14 +62,14 @@
     </div>
 
     <div v-if="showMerge" class="card merge">
-        <p class="mt-1 mb-4">Please select an id in order to merge other items into:</p>
+        <p class="mt-1 mb-4">Please select an item in order to merge other items into:</p>
         <table class="table">
             <thead class="thead-light">
                 <tr>
                     <th>Select</th>
                     <th scope="col">ID</th>
-                    <th scope="col">First name</th>
-                    <th scope="col">Last name</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
                 </tr>
             </thead>
             <tbody>
@@ -92,7 +92,7 @@
 
         <div v-if="alert" style="width: 100%;" class="mt-4">
             <div style="height:55px;" class="alert alert-warning" role="alert">
-                <p>Please check an ID to merge</p>
+                <p>Please select an item to merge into</p>
             </div>
         </div>
 

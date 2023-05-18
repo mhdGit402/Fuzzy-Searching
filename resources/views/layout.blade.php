@@ -5,5 +5,6 @@
 @yield('createUser')
 @yield('users')
 @yield('duplicateUsers')
+@yield('mergedUsers')
 
 @include('footer')

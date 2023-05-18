@@ -11,6 +11,7 @@ import Home from './components/Home.vue'
 import CreateUser from './components/CreateUser.vue'
 import Users from './components/Users.vue'
 import DuplicateUsers from './components/DuplicateUsers.vue'
+import MergedUsers from './components/MergedUsers.vue'
 
 createApp({})
     .component('header-component', Header)
@@ -39,3 +40,7 @@ createApp({})
 createApp({})
     .component('duplicateusers-component', DuplicateUsers)
     .mount('#duplicateUsers')
+
+createApp({})
+    .component('mergedusers-component', MergedUsers)
+    .mount('#mergedUsers')

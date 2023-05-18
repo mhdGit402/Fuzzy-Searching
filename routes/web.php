@@ -15,4 +15,6 @@ Route::get('/users', [UserController::class, 'showUsers']);
 Route::get('/users/duplicate', [UserController::class, 'showDuplicateUsers']);
 
 Route::post('/users/merge', [UserController::class, 'mergeUser']);
+Route::get('/users/merged', [UserController::class, 'mergedUsers']);
+
 Route::delete('/users/remove/{id}', [UserController::class, 'removeUser']);
