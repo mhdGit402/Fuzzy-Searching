@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MergedUsers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -41,7 +42,7 @@ class UserController extends Controller
                     $duplicate_First_Name = similar_text(strtolower($item1->firstname), strtolower($item2->firstname), $perc_First_Name);
                     $duplicate_Last_Name = similar_text(strtolower($item1->lastname), strtolower($item2->lastname), $perc_Last_Name);
                     
-                    if($perc_First_Name >= 60 && $perc_Last_Name >= 50){
+                    if($perc_First_Name >= 60 && $perc_Last_Name >= 35){
                         array_push($data, [
                             'firstname1' => $item1->firstname, 'firstname2' => $item2->firstname,
                             $perc_First_Name, $duplicate_First_Name,
@@ -129,6 +130,26 @@ class UserController extends Controller
             return false;
         }
         return true;
+    }
+
+    public function mergeUser(Request $request){
+
+        foreach($request->mergedIDs as $el){
+            $merge = User::query()
+            ->where('id', $el)
+            ->each(function ($oldRecord) use ($request) {
+                $newRecord = $oldRecord->replicate();
+                $newRecord->user_id = $request->mergeID;
+                $newRecord->setTable('merged_users');
+                $newRecord->save();
+                $oldRecord->delete();
+                });
+        }
+
+        if($merge){
+            return true;
+        }
+            return false;
     }
 
 }

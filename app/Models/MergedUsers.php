@@ -4,18 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\MergedUsers;
 
-class User extends Model
+class MergedUsers extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'firstname',
         'lastname'
     ];
 
-    public function mergedUsers(){
-        $this->hasMany(MergedUsers::class, 'user_id');
+    public function user(){
+        $this->belongsTo(User::class, 'user_id');
     }
 }
