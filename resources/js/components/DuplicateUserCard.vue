@@ -13,7 +13,7 @@
                 <tr>
                     <td>{{ parentIndex + 1 }}</td>
                     <td>{{ item.firstname }}</td>
-                    <td>{{ item.lastname }}</td>
+                    <td style="border-right: 1px solid #c5c5c5;">{{ item.lastname }}</td>
                     <td style="border:transparent">
                         <button @click="remove(item)">Remove</button>
                         <button @click="merge(item)">Merge</button>
@@ -22,8 +22,8 @@
                 <tr v-for="(el, index) in item.value">
                     <td>{{ parentIndex + 1 }} - {{ index + 1 }}</td>
                     <td>{{ el.firstname }}</td>
-                    <td>{{ el.lastname }}</td>
-                    <td style="border:transparent"></td>
+                    <td style="border-right: 1px solid #c5c5c5;">{{ el.lastname }}</td>
+                    <td :style="index != Object.keys(item.value).length - 1 ? {'border-bottom': 'transparent'} : {}"></td>
                 </tr>
             </tbody>
         </table>
@@ -40,7 +40,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr :id="b.id">
+                <tr :id="b.id" v-show="!deleteRowID.includes(b.id)">
                     <td>{{ b.id }}</td>
                     <td>{{ b.firstname }}</td>
                     <td>{{ b.lastname }}</td>
@@ -73,14 +73,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-show="!mergeRowID.includes(mergeItems.id)">
-                    <td><input v-model="check" type="radio" :value="mergeItems.id"></td>
+                <tr v-show="!mergeRowID.includes(mergeItems.id)" :id="`tr${mergeItems.id}`">
+                    <td><input @click="toggleBackground(mergeItems.id)" v-model="check" type="radio" :value="mergeItems.id"></td>
                     <td>{{ mergeItems.id }}</td>
                     <td>{{ mergeItems.firstname }}</td>
                     <td>{{ mergeItems.lastname }}</td>
                 </tr>
-                <tr v-for="el in mergeItems.value" v-show="!mergeRowID.includes(el.id)">
-                    <td><input v-model="check" type="radio" :value="el.id"></td>
+                <tr v-for="el in mergeItems.value" v-show="!mergeRowID.includes(el.id)" :id="`tr${el.id}`">
+                    <td><input @click="toggleBackground(el.id)" v-model="check" type="radio" :value="el.id"></td>
                     <td>{{ el.id }}</td>
                     <td>{{ el.firstname }}</td>
                     <td>{{ el.lastname }}</td>
@@ -125,7 +125,8 @@ export default {
             check: false,
             alert: false,
             successfulMerge: false,
-            mergeRowID: []
+            mergeRowID: [],
+            trID : []
         }
     },
     mounted() {
@@ -138,6 +139,13 @@ export default {
         });
     },
     methods: {
+        toggleBackground(e){
+            this.trID.push(e);
+            this.trID.forEach(el => {
+                document.querySelector(`#tr${el}`).style.backgroundColor =  '#fff';
+            });
+            document.querySelector(`#tr${e}`).style.backgroundColor =  '#ededed';
+        },
         remove(el) {
             this.b = el;
             this.showDuplicate = false;
@@ -228,4 +236,8 @@ tbody:nth-child(odd) {
 
 p {
     font-weight: bold;
-}</style>
+}
+.remove tr:nth-child(even){
+    background-color: #ededed;
+}
+</style>

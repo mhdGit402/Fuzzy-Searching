@@ -45,7 +45,7 @@ class UserController extends Controller
                 $duplicate_First_Name = similar_text(strtolower($item1->firstname), strtolower($item2->firstname), $perc_First_Name);
                 $duplicate_Last_Name = similar_text(strtolower($item1->lastname), strtolower($item2->lastname), $perc_Last_Name);
 
-                if ($perc_First_Name >= 60 && $perc_Last_Name >= 35) {
+                if ($perc_First_Name >= 50 && $perc_Last_Name >= 15) {
                     array_push($data, [
                         'firstname1' => $item1->firstname, 'firstname2' => $item2->firstname,
                         $perc_First_Name, $duplicate_First_Name,

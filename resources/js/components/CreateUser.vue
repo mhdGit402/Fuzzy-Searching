@@ -7,10 +7,10 @@
             <div style="font-size:17px;" class="mb-3">
 
                 <label for="firstname" class="form-label">First Name</label>
-                <input v-model="firstname" @keydown="capFirstName" type="text" class="form-control mb-3" id="firstname"
+                <input v-model="firstname" @keyup="capFirstName" type="text" class="form-control mb-3" id="firstname"
                     placeholder="Enter First Name...">
                 <label for="lastname" class="form-label">Last Name</label>
-                <input v-model="lastname" @keydown="capLastName" type="text" class="form-control" id="lastname"
+                <input v-model="lastname" @keyup="capLastName" type="text" class="form-control" id="lastname"
                     placeholder="Enter Last Name...">
 
 
