@@ -66,9 +66,9 @@ export default {
                         pdf.setFontSize(12);
                         pdf.setTextColor(50);
                         pdf.text(pdf.internal.pageSize.getWidth() - 9,
-                            pdf.internal.pageSize.getHeight() - 0.1 , ' Page ' + i + ' of ' + totalPages);
+                            pdf.internal.pageSize.getHeight() - 0.1, ' Page ' + i + ' of ' + totalPages);
 
-                        if(i == 1){
+                        if (i == 1) {
                             let img = new Image()
                             img.src = '/images/logo.png'
                             pdf.addImage(img, 'png', 13.1, 0.3, 3.1, 0.6);
@@ -92,7 +92,6 @@ export default {
 
 a {
     text-decoration: none;
-    /* margin-right:10px; */
 }
 
 p {
@@ -102,7 +101,8 @@ p {
 tbody:nth-child(odd) {
     background-color: #ededed;
 }
-button{
+
+button {
     width: 150px;
 }
 </style>

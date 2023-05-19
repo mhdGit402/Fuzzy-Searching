@@ -10,7 +10,8 @@
                 <input v-model="firstname" @keydown="capFirstName" type="text" class="form-control mb-3" id="firstname"
                     placeholder="Enter First Name...">
                 <label for="lastname" class="form-label">Last Name</label>
-                <input v-model="lastname" @keydown="capLastName" type="text" class="form-control" id="lastname" placeholder="Enter Last Name...">
+                <input v-model="lastname" @keydown="capLastName" type="text" class="form-control" id="lastname"
+                    placeholder="Enter Last Name...">
 
 
 
@@ -19,10 +20,10 @@
             <button style="width:150px;" type="submit" class="btn btn-primary mt-3">Submit</button>
 
             <div style="width: 50%;" class="mt-4" v-if="errors.length != 0">
-                    <div class="alert alert-warning" role="alert">
-                        Please check below:
-                        <p class="mt-3" v-for="error in errors">{{ error }}</p>
-                    </div>                    
+                <div class="alert alert-warning" role="alert">
+                    Please check below:
+                    <p class="mt-3" v-for="error in errors">{{ error }}</p>
+                </div>
             </div>
 
             <div style="width: 50%;" class="mt-4" v-if="successfulCreate">
@@ -50,18 +51,18 @@ export default {
         }
     },
     methods: {
-        capFirstName(){
-            if(this.firstname != null){
-                if(this.firstname.length === 1){
+        capFirstName() {
+            if (this.firstname != null) {
+                if (this.firstname.length === 1) {
                     this.firstname = this.firstname.toUpperCase();
                 }
-                this.firstname = this.firstname.replace(/[^\p{L}\p{N}\s]/gu, '');   
+                this.firstname = this.firstname.replace(/[^\p{L}\p{N}\s]/gu, '');
                 this.firstname = this.firstname.normalize("NFD").replace(/\p{Diacritic}/gu, '');
             }
         },
-        capLastName(){
-            if(this.lastname != null){
-                if(this.lastname.length === 1){
+        capLastName() {
+            if (this.lastname != null) {
+                if (this.lastname.length === 1) {
                     this.lastname = this.lastname.toUpperCase();
                 }
                 this.lastname = this.lastname.replace(/[^\p{L}\p{N}\s]/gu, '');
@@ -125,6 +126,7 @@ p {
     width: 50% !important;
     height: 50px !important;
 }
+
 label {
     font-weight: bold;
 }

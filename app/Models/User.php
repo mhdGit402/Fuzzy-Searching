@@ -15,7 +15,8 @@ class User extends Model
         'lastname'
     ];
 
-    public function mergedUsers(){
+    public function mergedUsers()
+    {
         return $this->hasMany(MergedUsers::class, 'user_id');
     }
 }

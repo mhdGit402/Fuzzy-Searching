@@ -98,7 +98,8 @@ a {
 p {
     font-weight: bold;
 }
-button{
+
+button {
     width: 150px;
 }
 </style>

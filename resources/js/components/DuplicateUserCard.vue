@@ -205,23 +205,27 @@ export default {
 .card {
     border: none;
 }
+
 .thead-light {
     background-color: #c5c5c5;
 }
+
 a {
     text-decoration: none;
     margin-right: 10px;
 }
+
 .primary button,
 .remove button {
     border: none;
     color: #0d6efd;
     background-color: transparent;
 }
+
 tbody:nth-child(odd) {
     background-color: #ededed;
 }
+
 p {
     font-weight: bold;
-}
-</style>
+}</style>

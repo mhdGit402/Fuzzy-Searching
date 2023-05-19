@@ -43,7 +43,8 @@
 
         <div class="mb-5 mt-5">
             <h4 style="font-weight: bold;">WHY CHOOSE AVA</h4>
-            <p style="padding:20px">Our experience and expertise in implementing telecommunication projects and customer satisfaction:</p>
+            <p style="padding:20px">Our experience and expertise in implementing telecommunication projects and customer
+                satisfaction:</p>
         </div>
         <cardComponent />
 
@@ -55,14 +56,14 @@ import cardComponent from './cardComponent.vue';
 
 export default {
     name: "Home",
-    components:{
+    components: {
         cardComponent,
     }
 }
 </script>
 
 <style scoped>
-p{
+p {
     max-width: 95%;
     font-size: 18px;
 }
