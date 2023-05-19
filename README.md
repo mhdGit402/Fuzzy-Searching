@@ -1,7 +1,7 @@
 <p align="center">
-    <a href="https://ava.ir/index.php/en/" target="_blank">
+    <!-- <a href="https://ava.ir/index.php/en/" target="_blank"> -->
     ![Alt text](/public/images/logo_md.png?raw=true "AVA Co.")
-    </a>
+    <!-- </a> -->
 </p>
 
 
