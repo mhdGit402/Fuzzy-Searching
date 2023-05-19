@@ -15,8 +15,8 @@
                     <td>{{ item.firstname }}</td>
                     <td style="border-right: 1px solid #c5c5c5;">{{ item.lastname }}</td>
                     <td style="border:transparent">
-                        <button @click="remove(item)">Remove</button>
-                        <button @click="merge(item)">Merge</button>
+                        <button class="btn btn-outline-primary" @click="remove(item)" style="width:90px;position: absolute; margin:40px;">Remove</button>
+                        <button class="btn btn-outline-primary" @click="merge(item)" style="width:90px;position: absolute; margin-top:40px;margin-left:150px;">Merge</button>
                     </td>
                 </tr>
                 <tr v-for="(el, index) in item.value">
@@ -44,13 +44,13 @@
                     <td>{{ b.id }}</td>
                     <td>{{ b.firstname }}</td>
                     <td>{{ b.lastname }}</td>
-                    <td><button @click="removeDuplicate(b.id)">Remove</button></td>
+                    <td><button @click="removeDuplicate(b.id)" style="border:none;color:#0d6efd; background-color: transparent;">Remove</button></td>
                 </tr>
                 <tr v-for="el in b.value" :id="el.id" v-show="!deleteRowID.includes(el.id)">
                     <td>{{ el.id }}</td>
                     <td>{{ el.firstname }}</td>
                     <td>{{ el.lastname }}</td>
-                    <td><button @click="removeDuplicate(el.id)">Remove</button></td>
+                    <td><button @click="removeDuplicate(el.id)" style="border:none;color:#0d6efd;background-color: transparent;">Remove</button></td>
                 </tr>
             </tbody>
         </table>
@@ -221,13 +221,6 @@ export default {
 a {
     text-decoration: none;
     margin-right: 10px;
-}
-
-.primary button,
-.remove button {
-    border: none;
-    color: #0d6efd;
-    background-color: transparent;
 }
 
 tbody:nth-child(odd) {
