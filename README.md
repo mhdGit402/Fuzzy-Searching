@@ -1,11 +1,11 @@
 <p align="center">
     <a href="https://ava.ir/index.php/en/" target="_blank">
-        <img src="/public/images/logo_md.png" alt="Latest Stable Version">
+        <img src="/public/images/logo_md.png" alt="AVA Co.">
     </a>
 </p>
 
 <p align="center">
-    ## Fuzzy Searching 
+    <h2> Fuzzy Searching </h2>
 </p>
 
 ## About Laravel
