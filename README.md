@@ -1,14 +1,11 @@
 <p align="center">
-    <!-- <a href="https://ava.ir/index.php/en/" target="_blank"> -->
-    ![Alt text](/public/images/logo_md.png?raw=true "AVA Co.")
-    <img src="/public/images/logo_md.png" alt="Latest Stable Version">
-    <!-- </a> -->
+    <a href="https://ava.ir/index.php/en/" target="_blank">
+        <img src="/public/images/logo_md.png" alt="Latest Stable Version">
+    </a>
 </p>
 
-
-
 <p align="center">
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+    ## Fuzzy Searching 
 </p>
 
 ## About Laravel
