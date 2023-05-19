@@ -31,14 +31,14 @@ In this page you can create users so we can detect duplicates of them later on.
 - **Detect Duplicates** <br />
 Main purpose of the application will be answered here! <br />
 After opening this page the algorithm of detection automatically runs and show a table of duplicate users. This table have entries such as First Name, Last Name and an action method for duplicate items. <br />
-In the action section we can Remove or Merge duplicates. <br />
+In the action section we can Remove or Merge duplicates. <br /> <br/>
 **Remove Action** <br />
-After clicking the remove button, we will have a new table with selected duplicate users. Now we can remove any of the duplicate items as we require. <br />
+After clicking the remove button, we will have a new table with selected duplicate users. Now we can remove any of the duplicate items as we require. <br /> <br />
 **Merge Action** <br />
 After clicking the merge button, we will have a new table with selected duplicate users. Now, by choosing an item we can merge other duplicates into selected item.
 
 - **View Users** <br />
-The cleaned dataset of users will be shown in this page. Also, we can export the report of data into the PDF file by clicking the 'export to PDF' button. <br />
+The cleaned dataset of users will be shown in this page. Also, we can export the report of data into the PDF file by clicking the 'export to PDF' button. <br /> <br/>
 **Note: If there are any duplicate items, you SHOULD first run the algorithm by VISITING DETECT DUPLICATES page in order to Remove or Merge duplicates!**
 
 - **Merged Users** <br />
