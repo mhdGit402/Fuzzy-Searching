@@ -88,7 +88,7 @@
             </tbody>
         </table>
         <button @click="mergeItem(mergeItems, check)" id="merge" style="width:150px;"
-            class="btn btn-outline-primary mt-3">Merge</button>
+            class="btn btn-primary mt-3">Merge</button>
 
         <div v-if="alert" style="width: 100%;" class="mt-4">
             <div style="height:55px;" class="alert alert-warning" role="alert">

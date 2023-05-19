@@ -7,16 +7,16 @@
             <div style="font-size:17px;" class="mb-3">
 
                 <label for="firstname" class="form-label">First Name</label>
-                <input v-model="firstname" type="text" class="form-control mb-3" id="firstname"
+                <input v-model="firstname" @keydown="capFirstName" type="text" class="form-control mb-3" id="firstname"
                     placeholder="Enter First Name...">
                 <label for="lastname" class="form-label">Last Name</label>
-                <input v-model="lastname" type="text" class="form-control" id="lastname" placeholder="Enter Last Name...">
+                <input v-model="lastname" @keydown="capLastName" type="text" class="form-control" id="lastname" placeholder="Enter Last Name...">
 
 
 
             </div>
 
-            <button style="width:150px;" type="submit" class="btn btn-outline-primary mt-3">Submit</button>
+            <button style="width:150px;" type="submit" class="btn btn-primary mt-3">Submit</button>
 
             <div style="width: 50%;" class="mt-4" v-if="errors.length != 0">
                     <div class="alert alert-warning" role="alert">
@@ -50,6 +50,24 @@ export default {
         }
     },
     methods: {
+        capFirstName(){
+            if(this.firstname != null){
+                if(this.firstname.length === 1){
+                    this.firstname = this.firstname.toUpperCase();
+                }
+                this.firstname = this.firstname.replace(/[^\p{L}\p{N}\s]/gu, '');   
+                this.firstname = this.firstname.normalize("NFD").replace(/\p{Diacritic}/gu, '');
+            }
+        },
+        capLastName(){
+            if(this.lastname != null){
+                if(this.lastname.length === 1){
+                    this.lastname = this.lastname.toUpperCase();
+                }
+                this.lastname = this.lastname.replace(/[^\p{L}\p{N}\s]/gu, '');
+                this.lastname = this.lastname.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+            }
+        },
         submitForm() {
 
             this.successfulCreate = false;

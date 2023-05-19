@@ -1,10 +1,10 @@
 <template>
     <nav id="sidebar">
         <div style="display:flex" class="sidebar-header">
-            <img width='220' src="/images/logo.png">
+            <img width='230' height="42" src="/images/logo.png">
         </div>
 
-        <ul style="font-weight:600;padding-left:5px ;" class="list-unstyled components mt-4">
+        <ul style="font-weight:600;padding-left:5px ;" class="list-unstyled components mt-5">
 
             <li class="mb-3">
 
@@ -16,16 +16,16 @@
                 <div class="collapse" id="home-collapse" style="">
                     <ul id="categoryTitle"
                         class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a style="font-weight:600;padding-left:42px !important;" href="/user/create"
+                        <li><a href="/user/create"
                                 class="link-body-emphasis d-inline-flex text-decoration-none">Create User</a>
                         </li>
-                        <li><a style="font-weight:600;padding-left:42px !important;" href="/users"
-                                class="link-body-emphasis d-inline-flex text-decoration-none">View Users</a>
-                        </li>
-                        <li><a style="font-weight:600;padding-left:42px !important;" href="/users/duplicate"
+                        <li><a href="/users/duplicate"
                                 class="link-body-emphasis d-inline-flex text-decoration-none">Detect Duplicates</a>
                         </li>
-                        <li><a style="font-weight:600;padding-left:42px !important;" href="/users/merged"
+                        <li><a href="/users"
+                                class="link-body-emphasis d-inline-flex text-decoration-none">View Users</a>
+                        </li>
+                        <li><a href="/users/merged"
                                 class="link-body-emphasis d-inline-flex text-decoration-none">Merged Users</a>
                         </li>
                     </ul>
@@ -37,7 +37,6 @@
 
         <ul style="bottom: 0; position: absolute; font-weight: 600;" class="list-unstyled CTAs">
             <li>
-                <!-- <a href="https://ava.ir/index.php/en/">Visit Company Website</a> -->
                 <div class="btn-holder">
                     <button @click="redirect" class="btn btn-4 hover-border-7">
                         <span>Visit  Website</span>
@@ -96,7 +95,9 @@ button:hover {
 }
 
 #categoryTitle li a {
-    font-size: 1.1em !important;
+    font-size: 1.2em !important;
+    font-weight:600;
+    padding-left:42px !important;
 }
 
 #categoryTitle a:hover {
@@ -180,13 +181,9 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    /* background: #ededed; */
+    padding-left: 10px;
+    padding-top:20px;
 }
-
-/* #sidebar ul.components {
-    padding: 20px 0;
-} */
 
 #sidebar ul p {
     color: #fff;
@@ -194,8 +191,8 @@ a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
+    padding: 15px;
+    font-size: 1.2em;
     display: block;
 }
 
@@ -315,21 +312,15 @@ a.article:hover {
   min-width: 150px;
 }
   .btn span {         
-    /* position: relative; */
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     top: 0; left: 0;
     width: 100%;
-    /* padding: 15px 20px; */
     transition: 0.3s;
   }
-
-
-
-/* 1.hover-filled-slide-down */
 .btn.hover-filled-slide-down::before {
   bottom: 0; left: 0; right: 0; 
   height: 100%; width: 100%;
