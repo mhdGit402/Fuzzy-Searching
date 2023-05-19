@@ -4,9 +4,7 @@
     </a>
 </p>
 
-<p align="center">
-    <h2> Fuzzy Searching </h2>
-</p>
+<h2 style="text-align: center">Fuzzy Searching</h2>
 
 ## About Laravel
 
