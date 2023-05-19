@@ -23,7 +23,7 @@ Fuzzy Searching project was developed to detect and remove duplicates from a dat
 **Note: Out of the box, there is a sample database 'duplicate_project_ava.sql' in the root directory which you can import and have a preview of how everything looks like in this project.**
 
 **Functionality of Pages:** <br />
-This web application contains several pages as follow:
+The purpose and functionality of pages in this web application are listed as below:
 
 - **Create User** <br />
 In this page you can create users so we can detect duplicates of them later on.
