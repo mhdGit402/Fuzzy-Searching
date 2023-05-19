@@ -3,7 +3,7 @@
     </a>
 </p>
 
-![Alt text](https://ava.ir/images/enlogo.png "AVA Co.")
+![Alt text](/public/images/logo.png?raw=true "AVA Co.")
 
 <p align="center">
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
