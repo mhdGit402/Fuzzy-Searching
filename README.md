@@ -1,4 +1,4 @@
-<p align="center"><a href="https://ava.ir/index.php/en/" target="_blank"><img src="https://ava.ir/images/enlogo.png" width="400" alt="AVA Co."></a></p>
+<p align="center"><a href="https://ava.ir/index.php/en/" target="_blank"><img src="/images/logo.png" width="400" alt="AVA Co."></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
