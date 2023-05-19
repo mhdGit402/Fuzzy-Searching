@@ -4,21 +4,18 @@
     </a>
 </p>
 
-<h2 style="text-align: center">Fuzzy Searching</h2>
+# Fuzzy Searching
 
-## About Laravel
+Fuzzy Searching project was developed to detect and remove duplicates from a dataset of names.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Detect duplicates that have slightly different first name or last name but refer to the same person
+- Flexible and customizable way to remove and merge duplicates
+- Ability to view and export the cleaned dataset and a report of merged duplicates
+- Automatically correct common formatting errors in the names (e.g. capitalization, punctuation)
+- Detect and handle non-Latin characters and special characters in the names (e.g. diacritics, accents, emojis)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
