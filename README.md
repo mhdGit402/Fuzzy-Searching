@@ -13,8 +13,6 @@
 Fuzzy Searching project was developed to detect and remove duplicates from a dataset of names.
 
 <br />
-<br />
-<br />
 
 ## Features
 
@@ -23,6 +21,8 @@ Fuzzy Searching project was developed to detect and remove duplicates from a dat
 - **Ability to view the cleaned dataset and merged duplicates and having report as PDF file**
 - **Automatically correct common formatting errors in the names (e.g. capitalization, punctuation)**
 - **Detect and handle non-Latin characters and special characters in the names (e.g. diacritics, accents, emojis)**
+
+<br />
 
 ## Usage
 
@@ -49,7 +49,10 @@ The cleaned dataset of users will be shown in this page. Also, we can export the
 **Note: If there are any duplicate items, you SHOULD first run the algorithm by VISITING DETECT DUPLICATES page in order to Remove or Merge duplicates!** <br />
 
 - **Merged Users** <br />
-Details of Merged Users will be shown in this page. Also, we can export the report of data into the PDF file by clicking the 'export to PDF' button. <br />
+Details of Merged Users will be shown in this page. Also, we can export the report of data into the PDF file by clicking the 'export to PDF' button.
+
+<br />
+<br />
 
 ## Designed and Developed Exclusively for AVA Co.
 
