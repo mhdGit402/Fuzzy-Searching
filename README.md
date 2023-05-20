@@ -36,6 +36,8 @@ After clicking the remove button, we will have a new table with selected duplica
 **Merge Action** <br />
 After clicking the merge button, we will have a new table with selected duplicate users. Now, by choosing an item we can merge other duplicates into selected item. <br />
 
+**Note: We can customize percentage of similarity in showDuplicateUsers() method in UserController.**
+
 - **View Users** <br />
 The cleaned dataset of users will be shown in this page. Also, we can export the report of data into the PDF file by clicking the 'export to PDF' button. <br /> <br/>
 **Note: If there are any duplicate items, you SHOULD first run the algorithm by VISITING DETECT DUPLICATES page in order to Remove or Merge duplicates!** <br />
