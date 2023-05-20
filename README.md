@@ -1,12 +1,4 @@
 <br />
-<br />
-
-<p align="center">
-    <a href="https://ava.ir/index.php/en/">
-        <img src="/public/images/logo_md.png" alt="AVA Co.">
-    </a>
-</p>
-
 
 # Fuzzy Searching
 
