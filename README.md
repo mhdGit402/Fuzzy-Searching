@@ -47,7 +47,3 @@ Details of Merged Users will be shown in this page. Also, we can export the repo
 
 <br />
 <br />
-
-## Designed and Developed Exclusively for AVA Co.
-
-<a href="https://ava.ir/index.php/en/">Visit company website</a>
